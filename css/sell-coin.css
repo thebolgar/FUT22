@@ -1,0 +1,566 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+body {
+  min-width: 320px;
+  color: #1A2334;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: #8EBD00;
+}
+
+.header {
+  background-image: url(../images/warranty-header__bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 330px;
+}
+
+.menu__adaptive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(30, 49, 72, 0.9);
+  padding: 15px;
+  min-height: 398px;
+  z-index: 50;
+}
+
+.menu__adaptive.menu__adaptive--close {
+  display: none;
+}
+
+.menu__adaptive .adaptive__inner {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+  padding-bottom: 15px;
+}
+
+.menu__adaptive .adaptive__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__adaptive .menu__adaptive-logo {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 229.4%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.menu__adaptive .menu__adaptive-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.menu__adaptive .menu__adaptive-list .menu__adaptive-item {
+  margin-top: 15px;
+}
+
+.menu__adaptive .menu__adaptive-list .menu__adaptive-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.menu__adaptive .menu__adaptive-list .menu__adaptive-link:hover {
+  font-weight: 900;
+}
+
+.header__inner {
+  position: relative;
+}
+
+.header__inner .header__decor {
+  display: none;
+}
+
+.header__inner-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__inner-menu .menu__list {
+  display: none;
+}
+
+.header__inner .logo__link {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.header__inner .logo__link span {
+  color: #CEF751;
+}
+
+.header__inner .menu__btn {
+  border: none;
+  background: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 60px 0 !important;
+}
+
+.header__title .header__subtitle {
+  font-weight: 500;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) {
+  .logo .logo__link {
+    font-size: 34px;
+  }
+  .content__title {
+    font-size: 60px !important;
+  }
+  .content__text {
+    font-size: 16px !important;
+    margin: 30px 0 !important;
+  }
+  .content__button .content__btn {
+    padding: 20px 24px !important;
+  }
+  .menu__list {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .menu__list .menu__list-item {
+    margin-left: 20px;
+  }
+  .menu__list .menu__list-item .menu__list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #CBCBCB;
+    text-decoration: none;
+  }
+  .menu__list .menu__list-item .menu__list-link:hover {
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 2px #CEF751 solid;
+  }
+  .menu__list .menu__list-item .menu__list-link:active {
+    font-weight: 900;
+  }
+  .menu__list .menu__list-item:first-child {
+    margin-left: 0;
+  }
+  .menu {
+    display: none;
+  }
+  .header__title {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 60px 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu__list-item {
+    margin-left: 20px;
+  }
+  .menu__list-item .menu__list-link {
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 22px;
+    color: #CBCBCB;
+    text-decoration: none;
+  }
+  .menu__list-item .menu__list-link:hover {
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 2px #CEF751 solid;
+  }
+  .header__title {
+    font-weight: 900;
+    font-size: 65px;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 60px 0 !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    min-height: 482px;
+  }
+  .logo .logo__link {
+    font-size: 58px !important;
+    line-height: 71px !important;
+  }
+  .container {
+    max-width: 1380px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  .menu__list {
+    position: relative !important;
+    z-index: 10 !important;
+  }
+  .menu__list .menu__list-item .menu__list-link {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .header__title {
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 98px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 60px 0 !important;
+  }
+}
+
+.main__inner {
+  background-color: #fff;
+  box-shadow: 0px 14px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 20px 8px;
+  margin-top: -40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.main__inner-block .main__inner-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.main__inner-block .main__inner-text .inner__text-link {
+  font-weight: 700;
+  color: #1A2334;
+  text-decoration: none;
+  position: relative;
+  padding-left: 20px;
+}
+
+.main__inner-block .main__inner-text .inner__text-link::before {
+  content: url(../images/telegram__mini.png);
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+.main__inner-block .main__inner-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main__inner-block .feedback__form {
+  padding: 20px 0 0 0;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.main__inner-block .feedback__form input:focus,
+.main__inner-block .feedback__form textarea:focus {
+  outline: none;
+}
+
+.main__inner-block .feedback__form .feedback__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.main__inner-block .feedback__form .feedback__input label {
+  width: 100%;
+}
+
+.main__inner-block .feedback__form .feedback__input .reserv__code {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #85B000;
+}
+
+.main__inner-block .feedback__form .feedback__input .reserv__code .reserv__link {
+  color: #85B000;
+}
+
+.main__inner-block .feedback__form .feedback__input-item {
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 51px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 17px 20px;
+}
+
+.main__inner-block .feedback__form .feedback__button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+.main__inner-block .feedback__form .feedback__btn {
+  background: #CEF751;
+  box-shadow: 0px 0px 18px rgba(206, 247, 81, 0.3), 0px 1px 0px #8EBD00;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 12px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .inner__text-link {
+    font-weight: 700;
+    color: #1A2334;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+  }
+  .inner__text-link::before {
+    content: url(../images/telegram__mini.png);
+    position: absolute;
+    top: -3px !important;
+    left: 0;
+  }
+  .main__inner-text {
+    font-size: 16px !important;
+    line-height: 29px !important;
+    max-width: 793px;
+    margin: 0 auto;
+  }
+  .main__inner-title {
+    font-size: 22px !important;
+  }
+  .label__inner {
+    font-size: 16px !important;
+  }
+  .reserv__code {
+    font-size: 14px !important;
+  }
+  .feedback__btn {
+    padding: 16px 36px !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .inner__text-link {
+    font-weight: 700;
+    color: #1A2334;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+  }
+  .inner__text-link::before {
+    content: url(../images/telegram__mini.png);
+    position: absolute;
+    top: -3px !important;
+    left: 0;
+  }
+  .main__inner-text {
+    font-size: 18px !important;
+    line-height: 29px !important;
+  }
+  .main__inner-title {
+    font-size: 26px !important;
+  }
+  .label__inner {
+    font-size: 18px !important;
+  }
+  .reserv__code {
+    font-size: 16px !important;
+  }
+  .feedback__button {
+    justify-content: flex-start !important;
+  }
+  .feedback__btn {
+    padding: 16px 36px !important;
+    box-shadow: 0px 0px 18px rgba(206, 247, 81, 0.3), 0px 4px 0px #8EBD00 !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .inner__text-link {
+    font-weight: 700;
+    color: #1A2334;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+  }
+  .inner__text-link::before {
+    content: url(../images/telegram__mini.png);
+    position: absolute;
+    top: -3px !important;
+    left: 0;
+  }
+  .main__inner-text {
+    font-size: 20px !important;
+    line-height: 29px !important;
+  }
+  .main__inner-title {
+    font-size: 30px !important;
+    margin-top: 30px !important;
+    margin-bottom: 40px;
+  }
+  .label__inner {
+    font-size: 20px !important;
+  }
+  .reserv__code {
+    font-size: 16px !important;
+  }
+  .feedback__button {
+    justify-content: flex-start !important;
+  }
+  .feedback__btn {
+    padding: 16px 36px !important;
+    box-shadow: 0px 0px 18px rgba(206, 247, 81, 0.3), 0px 4px 0px #8EBD00 !important;
+  }
+}
+
+.footer {
+  margin-top: 40px;
+  background: #1A2334;
+  padding: 30px 0;
+}
+
+.footer .footer__inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .footer__inner .footer__inner-menu .footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer__inner .footer__inner-menu .footer__menu-list .footer__menu-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 32px;
+  color: #CBCBCB;
+  text-decoration: none;
+}
+
+.footer .footer__inner .footer__inner-menu .footer__menu-list .footer__menu-link:hover {
+  color: #fff;
+}
+
+.footer .footer__inner .footer__inner-social {
+  margin: 30px 0;
+}
+
+.footer .footer__inner .footer__inner-social .social__inner {
+  display: flex;
+}
+
+.footer .footer__inner .footer__inner-social .social__inner img {
+  width: 28px;
+  height: 28px;
+}
+
+.footer .footer__inner .footer__inner-social .social__inner .content__social-instagram {
+  margin: 0 30px;
+}
+
+.footer .footer__inner .footer__inner-author {
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #AEAEAE;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    margin-top: 60px;
+  }
+  .footer__menu-list {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__menu-item {
+    margin-left: 30px;
+  }
+  .footer__menu-item:first-child {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer {
+    margin-top: 80px;
+  }
+  .footer__menu-link {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+  .footer__inner-social img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .footer__inner-author {
+    font-size: 18px !important;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-top: 100px;
+  }
+}
